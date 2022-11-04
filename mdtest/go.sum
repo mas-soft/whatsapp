@@ -15,6 +15,8 @@ github.com/mdp/qrterminal/v3 v3.0.0 h1:ywQqLRBXWTktytQNDKFjhAvoGkLVN3J2tAFZ0kMd9
 github.com/mdp/qrterminal/v3 v3.0.0/go.mod h1:NJpfAs7OAm77Dy8EkWrtE4aq+cE6McoLXlBqXQEwvE0=
 go.mau.fi/libsignal v0.0.0-20221015105917-d970e7c3c9cf h1:mzPxXBgDPHKDHMVV1tIWh7lwCiRpzCsXC0gNRX+K07c=
 go.mau.fi/libsignal v0.0.0-20221015105917-d970e7c3c9cf/go.mod h1:XCjaU93vl71YNRPn059jMrK0xRDwVO5gKbxoPxow9mQ=
+go.mau.fi/whatsmeow v0.0.0-20221104090956-123ccfa04185 h1:TTya4FuY3E8s+Dl7Srzv9fKbhvJeaWEcpQqa/WadsKo=
+go.mau.fi/whatsmeow v0.0.0-20221104090956-123ccfa04185/go.mod h1:elpwNbr2EwG1kadbswg+fKjlWffYUmOxqvx7Q8uX9YE=
 golang.org/x/crypto v0.0.0-20221012134737-56aed061732a h1:NmSIgad6KjE6VvHciPZuNRTKxGhlPfD6OA87W/PLkqg=
 golang.org/x/crypto v0.0.0-20221012134737-56aed061732a/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=
 golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=

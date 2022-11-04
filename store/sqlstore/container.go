@@ -13,11 +13,11 @@ import (
 	"fmt"
 	mathRand "math/rand"
 
-	waProto "go.mau.fi/whatsmeow/binary/proto"
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/util/keys"
-	waLog "go.mau.fi/whatsmeow/util/log"
+	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
+	"github.com/AhmedEmad92/whatsmeow/store"
+	"github.com/AhmedEmad92/whatsmeow/types"
+	"github.com/AhmedEmad92/whatsmeow/util/keys"
+	waLog "github.com/AhmedEmad92/whatsmeow/util/log"
 )
 
 // Container is a wrapper for a SQL database that can contain multiple whatsmeow sessions.
@@ -38,7 +38,8 @@ var _ store.DeviceContainer = (*Container)(nil)
 // The logger can be nil and will default to a no-op logger.
 //
 // When using SQLite, it's strongly recommended to enable foreign keys by adding `?_foreign_keys=true`:
-//   container, err := sqlstore.New("sqlite3", "file:yoursqlitefile.db?_foreign_keys=on", nil)
+//
+//	container, err := sqlstore.New("sqlite3", "file:yoursqlitefile.db?_foreign_keys=on", nil)
 func New(dialect, address string, log waLog.Logger) (*Container, error) {
 	db, err := sql.Open(dialect, address)
 	if err != nil {
@@ -59,11 +60,12 @@ func New(dialect, address string, log waLog.Logger) (*Container, error) {
 // The logger can be nil and will default to a no-op logger.
 //
 // When using SQLite, it's strongly recommended to enable foreign keys by adding `?_foreign_keys=true`:
-//   db, err := sql.Open("sqlite3", "file:yoursqlitefile.db?_foreign_keys=on")
-//   if err != nil {
-//       panic(err)
-//   }
-//   container, err := sqlstore.NewWithDB(db, "sqlite3", nil)
+//
+//	db, err := sql.Open("sqlite3", "file:yoursqlitefile.db?_foreign_keys=on")
+//	if err != nil {
+//	    panic(err)
+//	}
+//	container, err := sqlstore.NewWithDB(db, "sqlite3", nil)
 func NewWithDB(db *sql.DB, dialect string, log waLog.Logger) *Container {
 	if log == nil {
 		log = waLog.Noop

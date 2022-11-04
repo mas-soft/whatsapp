@@ -18,8 +18,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/util/cbcutil"
+	"github.com/AhmedEmad92/whatsmeow/socket"
+	"github.com/AhmedEmad92/whatsmeow/util/cbcutil"
 )
 
 // UploadResponse contains the data from the attachment upload, which can be put into a message to send the attachment.

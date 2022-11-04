@@ -16,9 +16,9 @@ import (
 	"sync"
 	"time"
 
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/util/keys"
+	"github.com/AhmedEmad92/whatsmeow/store"
+	"github.com/AhmedEmad92/whatsmeow/types"
+	"github.com/AhmedEmad92/whatsmeow/util/keys"
 )
 
 // ErrInvalidLength is returned by some database getters if the database returned a byte array with an unexpected length.
@@ -28,7 +28,8 @@ var ErrInvalidLength = errors.New("database returned byte array with illegal len
 // PostgresArrayWrapper is a function to wrap array values before passing them to the sql package.
 //
 // When using github.com/lib/pq, you should set
-//   whatsmeow.PostgresArrayWrapper = pq.Array
+//
+//	whatsmeow.PostgresArrayWrapper = pq.Array
 var PostgresArrayWrapper func(interface{}) interface {
 	driver.Valuer
 	sql.Scanner

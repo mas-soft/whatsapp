@@ -11,9 +11,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
+	"github.com/AhmedEmad92/whatsmeow/types"
+	"github.com/AhmedEmad92/whatsmeow/types/events"
 )
 
 func (cli *Client) handleReceipt(node *waBinary.Node) {
@@ -164,7 +164,8 @@ func (cli *Client) MarkRead(ids []types.MessageID, timestamp time.Time, chat, se
 // web works when it's not in the foreground.
 //
 // To mark the client as online, use
-//  cli.SendPresence(types.PresenceAvailable)
+//
+//	cli.SendPresence(types.PresenceAvailable)
 //
 // Note that if you turn this off (i.e. call SetForceActiveDeliveryReceipts(false)),
 // receipts will act like the client is offline until SendPresence is called again.

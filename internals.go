@@ -9,7 +9,7 @@ package whatsmeow
 import (
 	"context"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
+	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
 )
 
 type DangerousInternalClient struct {

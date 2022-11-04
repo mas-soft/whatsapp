@@ -13,7 +13,7 @@ package socket
 import (
 	"errors"
 
-	"go.mau.fi/whatsmeow/binary/token"
+	"github.com/AhmedEmad92/whatsmeow/binary/token"
 )
 
 const (
