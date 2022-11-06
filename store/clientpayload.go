@@ -123,7 +123,7 @@ var BaseClientPayload = &waProto.ClientPayload{
 }
 
 var DeviceProps = &waProto.DeviceProps{
-	Os: proto.String("whatsmeow"),
+	Os: proto.String("MaisrForAdvancedSystems"),
 	Version: &waProto.DeviceProps_AppVersion{
 		Primary:   proto.Uint32(0),
 		Secondary: proto.Uint32(1),
