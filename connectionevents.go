@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package whatsapp
 
 import (
 	"sync/atomic"
@@ -133,7 +133,7 @@ func (cli *Client) handleConnectSuccess(node *waBinary.Node) {
 // SetPassive tells the WhatsApp server whether this device is passive or not.
 //
 // This seems to mostly affect whether the device receives certain events.
-// By default, whatsmeow will automatically do SetPassive(false) after connecting.
+// By default, whatsapp will automatically do SetPassive(false) after connecting.
 func (cli *Client) SetPassive(passive bool) error {
 	tag := "active"
 	if passive {

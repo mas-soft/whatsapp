@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package whatsapp
 
 import (
 	"encoding/json"
@@ -31,7 +31,7 @@ type CheckUpdateResponse struct {
 const CheckUpdateURL = "https://web.whatsapp.com/check-update"
 
 // CheckUpdate asks the WhatsApp servers if there is an update available
-// (using the HTTP client and proxy settings of this whatsmeow Client instance).
+// (using the HTTP client and proxy settings of this whatsapp Client instance).
 func (cli *Client) CheckUpdate() (respData CheckUpdateResponse, err error) {
 	return CheckUpdate(cli.http)
 }

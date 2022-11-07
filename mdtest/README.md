@@ -1,6 +1,6 @@
 # mdtest
 
-This is a simple tool for testing whatsmeow.
+This is a simple tool for testing whatsapp.
 
 1. Clone the repository.
 2. Run `go build` inside this directory.

@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow_test
+package whatsapp_test
 
 import (
 	"context"
@@ -13,7 +13,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	whatsmeow "github.com/mas-soft/whatsapp"
+	whatsapp "github.com/mas-soft/whatsapp"
 	"github.com/mas-soft/whatsapp/store/sqlstore"
 	"github.com/mas-soft/whatsapp/types/events"
 	waLog "github.com/mas-soft/whatsapp/util/log"
@@ -39,7 +39,7 @@ func Example() {
 		panic(err)
 	}
 	clientLog := waLog.Stdout("Client", "DEBUG", true)
-	client := whatsmeow.NewClient(deviceStore, clientLog)
+	client := whatsapp.NewClient(deviceStore, clientLog)
 	client.AddEventHandler(eventHandler)
 
 	if client.Store.ID == nil {

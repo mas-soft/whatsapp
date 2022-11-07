@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package whatsapp
 
 import (
 	"crypto/aes"
@@ -71,7 +71,7 @@ func encryptMediaRetryReceipt(messageID types.MessageID, mediaKey []byte) (ciphe
 //	evt, err := cli.ParseWebMessage(chatJID, historyMsg.GetMessage())
 //	imageMsg := evt.Message.GetImageMessage() // replace this with the part of the message you want to download
 //	data, err := cli.Download(imageMsg)
-//	if errors.Is(err, whatsmeow.ErrMediaDownloadFailedWith404) || errors.Is(err, whatsmeow.ErrMediaDownloadFailedWith410) {
+//	if errors.Is(err, whatsapp.ErrMediaDownloadFailedWith404) || errors.Is(err, whatsapp.ErrMediaDownloadFailedWith410) {
 //	  err = cli.SendMediaRetryReceipt(&evt.Info, imageMsg.GetMediaKey())
 //	  // You need to store the event data somewhere as it's necessary for handling the retry response.
 //	  mediaRetryCache[evt.Info.ID] = imageMsg
@@ -85,7 +85,7 @@ func encryptMediaRetryReceipt(messageID types.MessageID, mediaKey []byte) (ciphe
 //	  switch evt := rawEvt.(type) {
 //	  case *events.MediaRetry:
 //	    imageMsg := mediaRetryCache[evt.MessageID]
-//	    retryData, err := whatsmeow.DecryptMediaRetryNotification(evt, imageMsg.GetMediaKey())
+//	    retryData, err := whatsapp.DecryptMediaRetryNotification(evt, imageMsg.GetMediaKey())
 //	    if err != nil || retryData.GetResult != waProto.MediaRetryNotification_SUCCESS {
 //	      return
 //	    }

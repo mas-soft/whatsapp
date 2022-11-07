@@ -4,8 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-// Package whatsmeow implements a client for interacting with the WhatsApp web multidevice API.
-package whatsmeow
+// Package whatsapp implements a client for interacting with the WhatsApp web multidevice API.
+package whatsapp
 
 import (
 	"context"
@@ -20,15 +20,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/AhmedEmad92/whatsmeow/appstate"
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/socket"
-	"github.com/AhmedEmad92/whatsmeow/store"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/types/events"
-	"github.com/AhmedEmad92/whatsmeow/util/keys"
-	waLog "github.com/AhmedEmad92/whatsmeow/util/log"
+	"github.com/mas-soft/whatsapp/appstate"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/socket"
+	"github.com/mas-soft/whatsapp/store"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/types/events"
+	"github.com/mas-soft/whatsapp/util/keys"
+	waLog "github.com/mas-soft/whatsapp/util/log"
 )
 
 // EventHandler is a function that can handle events from WhatsApp.
@@ -145,7 +145,7 @@ const handlerQueueSize = 2048
 //	if err != nil {
 //	    panic(err)
 //	}
-//	client := whatsmeow.NewClient(deviceStore, nil)
+//	client := whatsapp.NewClient(deviceStore, nil)
 func NewClient(deviceStore *store.Device, log waLog.Logger) *Client {
 	if log == nil {
 		log = waLog.Noop
@@ -438,7 +438,7 @@ func (cli *Client) Logout() error {
 // wrap the whole handler in another struct:
 //
 //	type MyClient struct {
-//	    WAClient *whatsmeow.Client
+//	    WAClient *whatsapp.Client
 //	    eventHandlerID uint32
 //	}
 //

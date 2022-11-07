@@ -28,7 +28,7 @@ import (
 	"github.com/mdp/qrterminal/v3"
 	"google.golang.org/protobuf/proto"
 
-	whatsmeow "github.com/mas-soft/whatsapp"
+	whatsapp "github.com/mas-soft/whatsapp"
 	"github.com/mas-soft/whatsapp/appstate"
 	waBinary "github.com/mas-soft/whatsapp/binary"
 	waProto "github.com/mas-soft/whatsapp/binary/proto"
@@ -39,7 +39,7 @@ import (
 	waLog "github.com/mas-soft/whatsapp/util/log"
 )
 
-var cli *whatsmeow.Client
+var cli *whatsapp.Client
 var log waLog.Logger
 
 var logLevel = "INFO"
@@ -72,12 +72,12 @@ func main() {
 		return
 	}
 
-	cli = whatsmeow.NewClient(device, waLog.Stdout("Client", logLevel, true))
+	cli = whatsapp.NewClient(device, waLog.Stdout("Client", logLevel, true))
 
 	ch, err := cli.GetQRChannel(context.Background())
 	if err != nil {
 		// This error means that we're already logged in, so ignore it.
-		if !errors.Is(err, whatsmeow.ErrQRStoreContainsID) {
+		if !errors.Is(err, whatsapp.ErrQRStoreContainsID) {
 			log.Errorf("Failed to get QR channel: %v", err)
 		}
 	} else {
@@ -512,7 +512,7 @@ func handleCmd(cmd string, args []string) {
 			log.Errorf("Failed to read %s: %v", args[0], err)
 			return
 		}
-		uploaded, err := cli.Upload(context.Background(), data, whatsmeow.MediaImage)
+		uploaded, err := cli.Upload(context.Background(), data, whatsapp.MediaImage)
 		if err != nil {
 			log.Errorf("Failed to upload file: %v", err)
 			return

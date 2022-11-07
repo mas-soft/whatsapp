@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package whatsapp
 
 import (
 	"context"
@@ -34,7 +34,7 @@ import (
 
 // GenerateMessageID generates a random string that can be used as a message ID on WhatsApp.
 //
-//	msgID := whatsmeow.GenerateMessageID()
+//	msgID := whatsapp.GenerateMessageID()
 //	cli.SendMessage(context.Background(), targetJID, msgID, &waProto.Message{...})
 func GenerateMessageID() types.MessageID {
 	id := make([]byte, 8)

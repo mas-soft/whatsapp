@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package whatsapp
 
 import (
 	"bytes"
@@ -39,7 +39,7 @@ type UploadResponse struct {
 //
 // For example, to send an image:
 //
-//	resp, err := cli.Upload(context.Background(), yourImageBytes, whatsmeow.MediaImage)
+//	resp, err := cli.Upload(context.Background(), yourImageBytes, whatsapp.MediaImage)
 //	// handle error
 //
 //	imageMsg := &waProto.ImageMessage{
