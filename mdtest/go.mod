@@ -5,7 +5,7 @@ go 1.17
 replace github.com/mas-soft/whatsapp => ../
 
 require (
-	github.com/mas-soft/whatsapp v0.0.0-00010101000000-000000000000
+	github.com/mas-soft/whatsapp v0.0.1
 	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/mdp/qrterminal/v3 v3.0.0
 	google.golang.org/protobuf v1.28.1
