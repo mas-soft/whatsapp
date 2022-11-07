@@ -3,7 +3,6 @@ module github.com/mas-soft/whatsapp
 go 1.17
 
 require (
-	github.com/AhmedEmad92/whatsmeow v0.0.3
 	github.com/gorilla/websocket v1.5.0
 	go.mau.fi/libsignal v0.0.0-20221015105917-d970e7c3c9cf
 	golang.org/x/crypto v0.0.0-20221012134737-56aed061732a
