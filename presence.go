@@ -9,9 +9,9 @@ package whatsmeow
 import (
 	"sync/atomic"
 
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/types/events"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/types/events"
 )
 
 func (cli *Client) handleChatState(node *waBinary.Node) {
@@ -84,7 +84,8 @@ func (cli *Client) SendPresence(state types.Presence) error {
 //
 // Also, it seems that the WhatsApp servers require you to be online to receive presence status from other users,
 // so you should mark yourself as online before trying to use this function:
-//     cli.SendPresence(types.PresenceAvailable)
+//
+//	cli.SendPresence(types.PresenceAvailable)
 func (cli *Client) SubscribePresence(jid types.JID) error {
 	return cli.sendNode(waBinary.Node{
 		Tag: "presence",

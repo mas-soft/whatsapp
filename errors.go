@@ -10,7 +10,7 @@ import (
 	"errors"
 	"fmt"
 
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
+	waBinary "github.com/mas-soft/whatsapp/binary"
 )
 
 // Miscellaneous errors

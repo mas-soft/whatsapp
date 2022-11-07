@@ -9,9 +9,9 @@ package events
 import (
 	"time"
 
-	"github.com/AhmedEmad92/whatsmeow/appstate"
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/types"
+	"github.com/mas-soft/whatsapp/appstate"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/types"
 )
 
 // Contact is emitted when an entry in the user's contact list is modified from another device.

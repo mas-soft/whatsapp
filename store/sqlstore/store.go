@@ -16,9 +16,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AhmedEmad92/whatsmeow/store"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/util/keys"
+	"github.com/mas-soft/whatsapp/store"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/util/keys"
 )
 
 // ErrInvalidLength is returned by some database getters if the database returned a byte array with an unexpected length.

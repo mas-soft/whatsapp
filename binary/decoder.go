@@ -5,8 +5,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/AhmedEmad92/whatsmeow/binary/token"
-	"github.com/AhmedEmad92/whatsmeow/types"
+	"github.com/mas-soft/whatsapp/binary/token"
+	"github.com/mas-soft/whatsapp/types"
 )
 
 type binaryDecoder struct {

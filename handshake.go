@@ -13,9 +13,9 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/socket"
-	"github.com/AhmedEmad92/whatsmeow/util/keys"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/socket"
+	"github.com/mas-soft/whatsapp/util/keys"
 )
 
 const NoiseHandshakeResponseTimeout = 20 * time.Second

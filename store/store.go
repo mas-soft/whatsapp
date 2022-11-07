@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"time"
 
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/util/keys"
-	waLog "github.com/AhmedEmad92/whatsmeow/util/log"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/util/keys"
+	waLog "github.com/mas-soft/whatsapp/util/log"
 )
 
 type IdentityStore interface {

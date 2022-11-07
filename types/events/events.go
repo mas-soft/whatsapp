@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"time"
 
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/types"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/types"
 )
 
 // QR is emitted after connecting when there's no session data in the device store.

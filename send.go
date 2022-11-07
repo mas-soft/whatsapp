@@ -27,9 +27,9 @@ import (
 	"go.mau.fi/libsignal/protocol"
 	"go.mau.fi/libsignal/session"
 
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/types"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/types"
 )
 
 // GenerateMessageID generates a random string that can be used as a message ID on WhatsApp.

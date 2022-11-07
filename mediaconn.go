@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	"github.com/AhmedEmad92/whatsmeow/types"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	"github.com/mas-soft/whatsapp/types"
 )
 
 //type MediaConnIP struct {

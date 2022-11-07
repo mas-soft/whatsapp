@@ -7,8 +7,8 @@
 package events
 
 import (
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	"github.com/AhmedEmad92/whatsmeow/types"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	"github.com/mas-soft/whatsapp/types"
 )
 
 // CallOffer is emitted when the user receives a call on WhatsApp.

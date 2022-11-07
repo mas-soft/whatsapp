@@ -17,7 +17,7 @@ import (
 
 	"go.mau.fi/libsignal/ecc"
 
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
 )
 
 // WAVersionContainer is a container for a WhatsApp web version number.

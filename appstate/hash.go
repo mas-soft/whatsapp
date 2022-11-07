@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/AhmedEmad92/whatsmeow/appstate/lthash"
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
+	"github.com/mas-soft/whatsapp/appstate/lthash"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
 )
 
 type Mutation struct {

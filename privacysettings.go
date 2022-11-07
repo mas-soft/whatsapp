@@ -7,9 +7,9 @@
 package whatsmeow
 
 import (
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/types/events"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/types/events"
 )
 
 // TryFetchPrivacySettings will fetch the user's privacy settings, either from the in-memory cache or from the server.

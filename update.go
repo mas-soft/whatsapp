@@ -13,8 +13,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/AhmedEmad92/whatsmeow/socket"
-	"github.com/AhmedEmad92/whatsmeow/store"
+	"github.com/mas-soft/whatsapp/socket"
+	"github.com/mas-soft/whatsapp/store"
 )
 
 // CheckUpdateResponse is the data returned by CheckUpdate.

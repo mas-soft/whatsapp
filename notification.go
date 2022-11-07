@@ -9,10 +9,10 @@ package whatsmeow
 import (
 	"errors"
 
-	"github.com/AhmedEmad92/whatsmeow/appstate"
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/types/events"
+	"github.com/mas-soft/whatsapp/appstate"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/types/events"
 )
 
 func (cli *Client) handleEncryptNotification(node *waBinary.Node) {

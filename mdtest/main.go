@@ -28,15 +28,15 @@ import (
 	"github.com/mdp/qrterminal/v3"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/AhmedEmad92/whatsmeow"
-	"github.com/AhmedEmad92/whatsmeow/appstate"
-	waBinary "github.com/AhmedEmad92/whatsmeow/binary"
-	waProto "github.com/AhmedEmad92/whatsmeow/binary/proto"
-	"github.com/AhmedEmad92/whatsmeow/store"
-	"github.com/AhmedEmad92/whatsmeow/store/sqlstore"
-	"github.com/AhmedEmad92/whatsmeow/types"
-	"github.com/AhmedEmad92/whatsmeow/types/events"
-	waLog "github.com/AhmedEmad92/whatsmeow/util/log"
+	whatsmeow "github.com/mas-soft/whatsapp"
+	"github.com/mas-soft/whatsapp/appstate"
+	waBinary "github.com/mas-soft/whatsapp/binary"
+	waProto "github.com/mas-soft/whatsapp/binary/proto"
+	"github.com/mas-soft/whatsapp/store"
+	"github.com/mas-soft/whatsapp/store/sqlstore"
+	"github.com/mas-soft/whatsapp/types"
+	"github.com/mas-soft/whatsapp/types/events"
+	waLog "github.com/mas-soft/whatsapp/util/log"
 )
 
 var cli *whatsmeow.Client
